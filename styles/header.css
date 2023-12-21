@@ -1,0 +1,294 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: white;
+    flex-direction: row;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    border-bottom: 1px #cccccc solid;
+    z-index: 2;
+}
+
+.left-section {
+    width: 170px;
+    display: flex;
+    align-items: center;
+}
+
+    .hamburger-menu {
+        height: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .youtube-logo {
+        height: 20px;
+    }
+
+.middle-section {
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+    .search-bar {
+        flex: 1;
+        width: 0;
+        height: 40px;
+        padding-left: 15px;
+        padding-bottom: 0px;
+        border-color: #cccccc;
+        border-style: solid;
+        border-bottom-left-radius: 2px;
+        border-top-left-radius: 2px;
+        border-width: 1px;
+        font-family: Arial;
+        font-size: 16px;
+        border-right: none;
+        color: #cccccc;
+        box-shadow: inset 0px 1px 2px #eeeeee;
+    }
+    .search-bar:focus {
+        outline: 1px #1f5cc6 solid;
+        outline-offset: -1px;
+    }
+
+    .search-button {
+        height: 42px;
+        width: 64px;
+        border-left: none;
+        background-color: #f7f7f7;
+        border: 1px solid #cccccc;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .search-button .tooltip {
+        position: absolute;
+        background-color: rgb(103, 103, 103);
+        color: white;
+        bottom: -54px;
+        right: 1px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 3px;
+        opacity: 0;
+        transition: opacity 0.2s;
+        pointer-events: none;
+    }
+
+    .search-button:hover .tooltip {
+        opacity: .9;
+    }
+
+    .search-button:hover {
+        background-color: #f0f0f0;
+    }
+
+    .search-button:active {
+        background-color: #ebebeb;
+    }
+        .search-img {
+            height: 25px;
+        }
+    
+    .voice-button {
+        display: flexbox;
+        justify-content: center;
+        position: relative;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        border: none;
+        margin-left: 6px;
+        display: flex;
+        align-items: center;
+        background-color: #f7f7f7;
+    }
+    .voice-img {
+        height: 25px;
+        padding-left: 1.5px;
+    }
+
+    .voice-button .tooltip {
+        white-space: nowrap;
+        position: absolute;
+        background-color: rgb(103, 103, 103);
+        color: white;
+        bottom: -54px;
+        right: 1px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 3px;
+        opacity: 0;
+        transition: opacity 0.2s;
+        pointer-events: none;
+    }
+
+    .voice-button:hover .tooltip {
+        opacity: .9;
+    }
+
+.right-section {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    padding-top: 14px;
+}
+
+    .upload-button {
+        display: flex;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        margin-left: 10px;
+        margin-right: 8px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .upload-button .tooltip {
+        position: absolute;
+        background-color: rgb(103, 103, 103);
+        color: white;
+        bottom: -54px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 3px;
+        opacity: 0;
+        transition: opacity 0.2s;
+        pointer-events: none;
+    }
+
+    .upload-button:hover .tooltip {
+        opacity: .9;
+    }
+
+    .upload-img {
+        height: 24px;
+        border: none;
+    }
+    .apps-button {
+        height: 40px;
+        width: 40px;
+        margin-right: 8px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .apps-button .tooltip {
+        white-space: nowrap;
+        position: absolute;
+        background-color: rgb(103, 103, 103);
+        color: white;
+        bottom: -54px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 3px;
+        opacity: 0;
+        transition: opacity 0.2s;
+        pointer-events: none;
+    }
+
+    .apps-button:hover .tooltip {
+        opacity: .9;
+    }
+
+    .apps-img {
+        height: 24px;
+        border: none;
+    }
+    .notification-badge {
+        position: relative;
+    }
+
+    .notification-number {
+        position: absolute;
+        top: -2px;
+        right: 3px;
+        background-color: #cc0000;
+        font-size: 10px;
+        font-family: roboto;
+
+        color: white;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        border-radius: 20px;
+    }
+
+    .notifications-button {
+        height: 40px;
+        width: 40px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .notifications-button .tooltip {
+        position: absolute;
+        background-color: rgb(103, 103, 103);
+        color: white;
+        bottom: -54px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 3px;
+        opacity: 0;
+        transition: opacity 0.2s;
+        pointer-events: none;
+    }
+
+    .notifications-button:hover .tooltip {
+        opacity: .9;
+    }
+
+    .notifications-img {
+        height: 24px;
+        border: none;
+    }
+
+    .my-channel {
+        height: 40px;
+        width: 40px;
+        border: none;
+        background-color: transparent;
+        border-radius: 20px;
+        margin-left: 10px;
+        cursor: pointer;
+        margin-bottom: 12px;
+    }
+
+    .my-channel-img {
+        height: 35px;
+        width: 35px;
+        margin-bottom: 12px;
+        border-radius: 20px;
+    }
